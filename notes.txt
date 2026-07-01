@@ -1,0 +1,26 @@
+https://www.ic.unicamp.br/~zanoni/teaching/mc102/2026-1s/
+
+30/06/2026
+Aula 01 - Aula Introdutoria
+
+Aula ministrada pela monitor da disciplina phd:
+https://www.gabrielbianchindeoliveira.com/
+
+Organização básica de um sistema computacional:
+
+    -- alto nível
+    Programas de aplicação (vou estudar isso)
+    Compiladores / Interpretadores (também são programas)
+    Sistema operacional (gere recursos do sistema cpu, disc, memory)
+    Hardware
+    -- baixo nível
+
+Um interpretador traduz o código linha a linha, apenas
+quando aquela linha precisa ser executada.
+
+Já o compilador traduz o programa inteiro em código de
+máquina de uma só vez, gerando um código executável.
+
+Linguagem interpretada x compilada (é != de paradigma prog)
+    C é compilada
+    python é interpretada
