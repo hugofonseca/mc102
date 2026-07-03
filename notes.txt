@@ -24,3 +24,102 @@ máquina de uma só vez, gerando um código executável.
 Linguagem interpretada x compilada (é != de paradigma prog)
     C é compilada
     python é interpretada
+
+
+03/07/2026
+Aula 02 - Python Básico
+
+Verificando pelo terminal:
+    a versão do python instalada
+    o acesso ao ambiente interativo do python
+Os comando sugeridos foram:
+    "python3 --version"
+    "python3"
+Porém, no meu só terminal só funcionou ao excluir o "3".
+O que explica isso? Alyas?
+
+Curiosidade: função printf(arg 1, arg 2, arg 3)
+print("Hello world") dá no mesmo que
+print("Hello", "world") dá no mesmo que
+print("Hello", "world", sep = " ")
+Além de sep, há end p/ indicar um caractere final na linha.
+
+Para comentar uma linha de código, utilizar #
+Para comentar várias linhas, utlizar '''
+
+Tipos de dados
+    int Números inteiros (-3, 7, 0, 2020)
+    float Números reais (-3.2, 1.5, 1e-8, 3.2e5)
+    str Texto string ("a","Unicamp2020")
+    bool Valores boleanos (True, False)
+Função type recebe um dado como argumento e retorna o seu tipo
+    print(type(10)) imprime <class 'int'>
+    print(type(10.1)) imprime <class 'float'>
+    print(type(True)) imprime <class 'bool'>
+    print(type("10")) imprime <class 'str'>
+    print(type("10.1")) imprime <class 'str'>
+    print(type("True")) imprime <class 'str'>
+
+Atribuição de um valor em diversas variáveis. Ou seja,
+o comando
+a = b = c = 3 
+atribui o int 3 nessas três variáveis.
+
+Atribuição de diversos valores em diversas variáveis. Ou seja,
+o comando
+a, b, c = 1, 2, 3
+atribui o int 1 em a, o int 2 em b, o int 3 em c.
+
+A linguagem python é case sensitive, diferencia maiúscula de minúscula.
+
+Exemplos com alguns operadores matemáticos:
+    1.5 + 2 retorna 3.5
+    o código
+        a = 1000
+        b = 0.1
+        print(a - b) #retorna 999.9 
+        print (b - a) #retorna -999.9
+    7 / 2 retorna 3.5
+    o operador // se trata de divisão inteira
+        7 // 2 retorna 3 
+        10 // 3.4 retorna 2.0
+    ** é potência
+        2 ** 2 retorna 4
+        3.5 ** 2.5 retorna 22.91765149399039
+    % é o resto da divisão inteira
+        57 % 13 retorna 5 pois 13 cabe 4 vezes e resta 5
+        5.5 % 2 retorna 1.5 pois cabe 2 vezes e resta 1.5
+
+Operação com atribuição direta funciona:
+    +=, -=, /=, *= 
+
+Ordem de precedência das operações:
+    potência
+    operador unário (+ ou -) é o sinal do número
+    multiplicação e divisão (na ordem que aparecem)
+    módulo
+    adição e subtração (na ordem que aparecem)
+A utilização de parênteses funciona para gerir a ordem.
+
+Exemplos numéricos curiosos:
+    3 + * 3 retorna syntax error pela troca ordem dos sinais
+    3 * + 3 retorna 9 pois ele lê "três vezes mais três"
+    3 * - 3 retorna -9 pois ele lê "três vezes menos três"
+        achei que tudo seria syntax error pelos sinais seguidos
+    -2 * * 2 retorna -4 pois ele faz a precedencia 2^2 vezes -1
+    (-2) * * 2 retorna 4 pois ele faz a precedencia (-2)^2
+
+Exemplos strings curiosos:
+    "Hello" + " World" retorna "Hello World" (concatenação)
+    "ABC" * 3 retorna ABCABCABC (replicação)
+    código
+        letra = "Z"
+        n = 10
+        letra * n retorna ZZZZZZZZZZ
+    precedência 1º replicação 2º concatenação
+        "a" + "b" * 3 retorna abbb
+        ("a" + "b") * 3 retorna ababab
+
+Exemplos lógicos curiosos:
+    5 == 5.0 retorna True
+    5 == 5.000001 retorna False
