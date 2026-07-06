@@ -123,3 +123,27 @@ Exemplos strings curiosos:
 Exemplos lógicos curiosos:
     5 == 5.0 retorna True
     5 == 5.000001 retorna False
+    5 == "5" retorna False
+    Comparações entre caracteres (asci code explica):
+        "a" > "b" retorna False pq ele compara o asci code
+        "A" == "a" retorna False pelo mesmo motivo...
+        "A" < "a" retorna True pelo mesmo motivo...
+    Comparações entre strings (asci code ordem alfabetica):
+        "Araraquara" < "Araras" é T pq é caractere a caractere
+        "Maria" < "Maria Clara" é T pelo mesmo motivo...
+        "maria" < "Maria Clara" é F pq o "m" vem depois logo o asci code dele é maior.
+
+Operadores lógicos
+    ver diferença pros operadores lazy
+        (and é dif de &)
+        (or é dif de |)
+        esta diversidade de operadores é usual em projetos reais?
+
+Conversçao de Tipos
+    int(valor) converte valor para int
+    float(valor) converte valir para float
+    e assim vai para str() string e bool() booleano
+
+Entrada de dados
+    sintaxe da funçao input 
+        x = input("Mensagem opcional") guarda em x o input do usuario
