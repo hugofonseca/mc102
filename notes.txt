@@ -159,5 +159,8 @@ Respostas de exercícios conceituais da Lista de Exercícios 1:
         O comando "b = a" atribui o int 10 na variável b
         O comando "c = 9" guarda o int 9 na variável c
         O comando "d = c" atribui o int 9 na variável d
-        O comando "c = c + 1" soma 9+1 e guarda o resultado na variável c
-
+        O comando "c = c + 1" soma 9+1 e guarda o resultado na 
+        variável c
+    Questão 4: 
+        x, y = y, x é uma instrução p/ troca de valores entre
+        variáveis sem variável auxiliar
