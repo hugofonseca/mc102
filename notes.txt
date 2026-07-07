@@ -147,3 +147,17 @@ Conversçao de Tipos
 Entrada de dados
     sintaxe da funçao input 
         x = input("Mensagem opcional") guarda em x o input do usuario
+
+Respostas de exercícios conceituais da Lista de Exercícios 1:
+    Questão 1:
+        A idade de uma pessoa deve ser armazenada como int
+        A quantidade de estrelas na galáxia deve ser int
+        A área de uma superfície deve ser armazenada como float
+        A média da quantidade de chuva em um mês deve ser float
+    Questão 2:
+        O comando "a = 10" guarda o int 10 na variável a
+        O comando "b = a" atribui o int 10 na variável b
+        O comando "c = 9" guarda o int 9 na variável c
+        O comando "d = c" atribui o int 9 na variável d
+        O comando "c = c + 1" soma 9+1 e guarda o resultado na variável c
+
