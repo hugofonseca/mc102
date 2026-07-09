@@ -164,3 +164,31 @@ Respostas de exercícios conceituais da Lista de Exercícios 1:
     Questão 4: 
         x, y = y, x é uma instrução p/ troca de valores entre
         variáveis sem variável auxiliar
+
+09/07/2026
+Aula 04 - Comandos de Repetição
+
+Função range gera uma sequência de números inteiros:
+    range(2, 6) gera 2, 3, 4, 5 sem gerar o elemento limite final 6.
+    range(0, 4) gera 0, 1, 2, 3 pelo mesmo motivo.
+    range(4) também gera os valores acima pois o limite inicial é
+    zero por padrão.
+    range(0, -5) não gera valor pois não sugere sequência crescente.
+    range(2, 10, 2) gera de 2 até 9 pulando de 2 números em 2 núm.
+    pois foi incluído o 3º argumento.
+    OBS
+        comando list(range(2, 6)) gera lista (estrutura de dados)
+        com os elementos da sequência.
+        comando list(range(5, 0, -1)) gera lista decrescente de
+        5 até 1 pulando de 1 em 1.
+
+No comando for, não precisamos explicitamente converter a sequência
+de inteiros gerada pelo comando range() numa lista
+    Ou, seja, o código:
+        for i in list(range(2))
+            print("x")
+    Retorna o mesmo que o código:
+        for i in range(2):
+            print("x")
+
+
