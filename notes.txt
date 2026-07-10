@@ -190,5 +190,19 @@ de inteiros gerada pelo comando range() numa lista
     Retorna o mesmo que o código:
         for i in range(2):
             print("x")
-
-
+Ainda no comando for, ele pode conter break e continue:
+    Algoritmo busca de elemento em lista com break:
+        x = int(input("Digite um número: "))
+        for i in [2, 4, 7, 1]:
+            if i == x:
+                print("Elemento", i, "encontrado!")
+                break
+        else:
+            # só entra no else se o for não rodar o break
+            # quando rodar o break, ele não vai entrar no else
+            print("O elemento", x, "não está na lista")
+    Algoritmo imprime elementos pares de uma lista com continue:
+        for i in [2,4,7,10]:
+            if i % 2 == 1:
+                continue # pula prox interação sem executar o print abaixo
+            print(i)
